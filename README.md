@@ -57,7 +57,7 @@ Contient un champ libre
 
 ## Livrables
 - Une user storie (en gif animé ou en diagramme)
-- Un zonning
+- Un wireframe
 - Une maquette
 - Un template HTML fonctionnel
 
@@ -65,4 +65,4 @@ Contient un champ libre
 En solo
 
 ## Planning
-2 jours
+3 jours
