@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    background-color: #0C3333;
+}
+.titre{
+    background-color: #68C495;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    margin-left: 30%;
+    color: white;
+}
+p{
+    margin-left: 40%;
+    margin-top: 30px;
+}
+.container{
+    display:flex;
+    border: 3px solid #333;
+    height:700px ;
+    background-color: white;
+    border-radius: 10px;
+}
+.depenses, .recettes, .epargne{
+    border-right: 1px solid #333;
+}
+
+.tab{
+    padding: 40px;
+
+}
+input{
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+label{
+    margin-right: 30px;
+    margin-top: 20px;
+}
+#btnReset{
+    padding: 10px;
+    background-color: #FA5347;
+    color: white;
+    border: none;
+}
