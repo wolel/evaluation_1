@@ -5,48 +5,52 @@
 body{
     margin:0;
     padding: 0;
-    background-color: #0C3333;
-}
-.titre{
-    background-color: #68C495;
-    margin-left: auto;
-    margin-right: auto;
-}
-h1 {
-    margin-left: 30%;
-    color: white;
-}
-p{
-    margin-left: 40%;
-    margin-top: 30px;
-}
-.container{
-    display:flex;
-    border: 3px solid #333;
-    height:700px ;
-    background-color: white;
-    border-radius: 10px;
-}
-.depenses, .recettes, .epargne{
-    border-right: 1px solid #333;
+    background-color: #333;
+
 }
 
-.tab{
-    padding: 40px;
+#depenses, #recettes, #epargnes, #resultat{
+
+    box-shadow: 2px 2px 15px #131313;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left:  10%;
+    margin: 20px 500px 20px 500px;
+
+}
+#boxBtnDep, #boxBtnRec, #boxBtnEp{
+    margin-left: 41%;
+}
+
+label{
+    color: grey;
+    line-height: 60px;
+    font-size: 15px;
+    font-family: "Open Sans", serif;
+}
+h1 {
+    color: grey;
+    font-size: 65px;
+    box-shadow: 2px 2px 5px #1d1d1d;
+    width: 100%;
+    margin-left: 41%;
+
+
+}
+p{
+    color: grey;
+    font-size: 15px;
+}
+h3{
+    color: white;
+    background-color: #6AB880;
+    font-size: 30px;
+    width: 350px;
+    border-radius: 2px;
+    text-align: center;
+    padding: 5px;
 
 }
 input{
-    padding: 5px;
-    text-align: center;
-    margin-bottom: 20px;
-}
-label{
-    margin-right: 30px;
-    margin-top: 20px;
-}
-#btnReset{
     padding: 10px;
-    background-color: #FA5347;
-    color: white;
-    border: none;
 }

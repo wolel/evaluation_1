@@ -17,65 +17,90 @@
 </head>
 <body>
 
-<div class="titre">
+<!---------------TITRE------------------------------------>
+
     <h1>Je calcule mon de budget</h1>
     <p>Gerez-vous bien votre budget?</p>
+
+
+<!---------------DEPENSES------------------------------------>
+
+<div id="depenses">
+        <h3>Dépenses FIXES(€)</h3>
+
+    <input id="charges" type="number" placeholder="loyer et charges" value="0">
+    <label>loyer et charges</label><br>
+
+    <input  id="gaz" type="number" placeholder="gaz" value="0">
+    <label>Gaz</label><br>
+
+        <input id="electricite" type="number" value="0" placeholder="electricite">
+    <label>Electicité</label><br>
+
+        <input id="eau" type="number" placeholder="eau" value="0">
+    <label>Eau</label><br>
+
+        <input id="internet" type="number" placeholder="internet - téléphone" value="0">
+    <label>internet - téléphone</label><br>
+
+        <h3>Dépenses Courantes(€)</h3>
+
+        <input id="courses" type="number" placeholder="courses" value="0" >
+    <label>Courses</label><br>
+
+        <input id="transport" type="number" placeholder="Essence/frais de transport en commun"value="0">
+    <label>Essence/frais de transport en commun</label><br>
+
+        <div id="plus">+</div>
 </div>
 
-<div class="container">
+<div id="boxBtnDep">
+<button id="btnTotalDepense" >Total Dépenses</button>
+<input id="resDep" type="text" placeholder= "total Dépenses">
+</div>
+<!---------------RECETTES------------------------------------>
 
-    <div class="tab depenses">
-        <h3>Dépenses FIXES</h3>
-        <label>loyer et charges</label>
-        <input class="charges dep" type="number">
-        <label>Gaz</label>
-        <input class="gaz dep" type="number">
-        <label>Electicité</label>
-        <input class="electicite dep" type="number">
-        <label>Eau</label>
-        <input class="eau dep" type="number">
-        <label>téléphone - internet</label>
-        <input class="internet dep" type="number">
+<div id="recettes">
+        <h3>Recettes(€)</h3>
+        <input id="salaire" type="number" value="0" placeholder="salaire">
+    <label>Salaire</label><br>
+        <input id="alloc" type="number" value="0" placeholder="allocations">
+    <label>Allocations</label><br>
+</div>
 
-        <h3>Dépenses Courantes</h3>
-        <label>courses</label>
-        <input class="courses depCour" type="number">
-        <label>essence/frais de transport en commun</label>
-        <input class="transport depCour" type="number">
+<div id="boxBtnRec">
+<button id="btnTotalRecettes">Total recettes</button>
+<input id="resRec" type="number" placeholder="Total recettes">
+</div>
+<!---------------EPARGNES------------------------------------>
 
+    <div id="epargnes">
+        <h3>Epargne(€)</h3>
+        <input id="ep"type="number" value="0" placeholder="epargnes" >
+        <label>Epargne</label><br>
         <div class="plus">+</div>
     </div>
 
+<div id="boxBtnEp">
+<button id="btnTotalEpargnes">Total epargnes</button>
+<input id="resEp" type="number" placeholder="Total epargnes">
+</div>
+<!---------------RESULTAT------------------------------------>
 
-    <div class="tab recettes">
-        <h3>Recettes</h3>
-        <label>Salaire</label>
-        <input class="salaire rec" type="number">
-        <label>Allocations</label>
-        <input class="alloc rec" type="number">
-        <div class="plus">+</div>
-    </div>
+<select id="operators">
+    <option value="+">+</option>
+    <option value="-">-</option>
+</select>
 
-    <div class="tab epargne">
-        <h3>Epargne</h3>
-        <label>Epargne</label>
-        <input class="epargne"type="number" >
-        <div class="plus">+</div>
-
-    </div>
-
-    <div class="tab resultat">
+<div id = "resultat">
         <h3>Résultat</h3>
+        <button id="btnTotal">Total ALL</button>
+        <input id="result" type="number" placeholder="Total Final">
         <label>Total dépenses</label>
-        <input class="resultat res" type="number">
-
-        <div class="plus">+</div>
-    </div>
-
-
 </div>
 
-<button type="button" id="btnReset">Reset</button>
+
+<!--<button type="button" id="btnReset">Reset</button>-->
 
 <script src="script.js"></script>
 </body>
