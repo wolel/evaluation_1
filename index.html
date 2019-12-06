@@ -51,7 +51,7 @@
         <input id="transport" type="number" placeholder="Essence/frais de transport en commun"value="0">
     <label>Essence/frais de transport en commun</label><br>
 
-        <div id="plus">+</div>
+        <div class="plus" onclick="addFields()">+</div>
 </div>
 
 <div id="boxBtnDep">
@@ -66,6 +66,9 @@
     <label>Salaire</label><br>
         <input id="alloc" type="number" value="0" placeholder="allocations">
     <label>Allocations</label><br>
+
+    <div class="plus">+</div>
+
 </div>
 
 <div id="boxBtnRec">
@@ -78,6 +81,7 @@
         <h3>Epargne(€)</h3>
         <input id="ep"type="number" value="0" placeholder="epargnes" >
         <label>Epargne</label><br>
+
         <div class="plus">+</div>
     </div>
 
@@ -94,9 +98,10 @@
 
 <div id = "resultat">
         <h3>Résultat</h3>
-        <button id="btnTotal">Total ALL</button>
-        <input id="result" type="number" placeholder="Total Final">
+        <button id="btnTotalAll">Total ALL</button>
+        <input id="resultFinal" type="number" placeholder="Total Final">
         <label>Total dépenses</label>
+
 </div>
 
 

@@ -11,7 +11,6 @@ var charges = document.getElementById('charges');
 //var courses = document.getElementById('courses');
 //var transport = document.getElementById('transport');
 */
-var plus = document.getElementById('plus');//++++++++++++
 
 // --------------tableau recettes----------------
 
@@ -24,10 +23,10 @@ var epargne = document.getElementById('ep');
 
 //--------------tableau resultat----------------
 
-var result = document.getElementById('result');
+var resultFinal = document.getElementById('resultFinal');
 var btnReset = document.getElementById('btnReset');
-var btnTotal = document.getElementById('btnTotal');
-var totalAll;
+var btnTotalAll = document.getElementById('btnTotalAll');
+
 
 var btnTotalDepense = document.getElementById('btnTotalDepense');
 var btnTotalRecettes = document.getElementById('btnTotalRecettes');
@@ -50,15 +49,15 @@ var tabEpargnes = [];
    //alert(tabDepenses[0].value);
 
 btnTotalDepense.addEventListener("click", function () {
-    recupTableauDepenses(tabDepenses);
+    recupTableauDepenses(tabDepenses,resDep);
 
 });
 btnTotalRecettes.addEventListener("click", function () {
-    recupTableauRecettes(tabRecettes);
+    recupTableauDepenses(tabRecettes,resRec);
 
 });
 btnTotalEpargnes.addEventListener("click", function () {
-    recupTableauEpargnes(tabEpargnes);
+    recupTableauDepenses(tabEpargnes,resEp);
 
 });
 
@@ -73,34 +72,28 @@ btnTotalEpargnes.addEventListener("click", function () {
  * pr modifier mes boutton, il s'uffit de rajpouter des paramettres dans "recupereTableau()"
 
  */
-function recupTableauDepenses(tabParam){
+function recupTableauDepenses(tabParam,resParam){
     var result = 0;
     for (var j = 0; j < tabParam.length; j++ ){
         result += parseFloat(tabParam[j].value);
-        //console.log(j);
+        console.log(tabParam);
     }
-    resDep.value = result;
-}
-
-function recupTableauRecettes(tabParam){
-    var result = 0;
-    for (var j = 0; j < tabParam.length; j++ ){
-        result += parseFloat(tabParam[j].value);
-        //console.log(j);
-    }
-    resRec.value = result;
-}
-
-function recupTableauEpargnes(tabParam){
-    var result = 0;
-    for (var j = 0; j < tabParam.length; j++ ){
-        result += parseFloat(tabParam[j].value);
-        //console.log(j);
-    }
-    resEp.value = result;
+    resParam.value = result;
 }
 
 
+var totalAll = 0;
+btnTotalAll.addEventListener("click", function () {
+    totalAll = parseFloat(resRec.value) + parseFloat(resDep.value) + parseFloat(resDep.value) ;
+
+resultFinal.value = totalAll;
+   console.log(resultFinal.value);
+});
+
+function addFields() {
+    document.getElementById('depenses').innerHTML += '<input id="transport" type="number" placeholder="new input" value="0"><br>';
+
+}
 
 /**
  * function totalDepenses() {
@@ -118,8 +111,6 @@ function recupTableauEpargnes(tabParam){
     var totalAll = document.getElementById('result').value = charges + gaz +
         electricite + eau + internet + courses + transport;
         console.log(total);
-
  */
-
 
 //TODO: pourquoi je ne sais pas faire juste le total de charges + gaz par ex?

@@ -19,21 +19,67 @@ body{
 
 }
 #boxBtnDep, #boxBtnRec, #boxBtnEp{
-    margin-left: 41%;
+    margin-left: 32%;
+}
+#btnTotalDepense, #btnTotalRecettes, #btnTotalEpargnes{
+    background-color: #224b96;
+    padding: 20px 50px 20px 50px;
+    border: none;
+    box-shadow: 0 4px 1px -1px #232323;
+    text-align: center;
+    transition: .3s ease-in-out;
+    border-radius: 3px;
+    font-size: 15px;
+
+
+}
+#btnTotalDepense:hover, #btnTotalRecettes:hover, #btnTotalEpargnes:hover{
+    transform: translate(-1%) scale(0.98);
+    box-shadow: 1px 1px 3px #111111;
+    background-color: #245FB8;
+    color: white;
+
+}
+#btnTotalAll{
+    background-color: #224b96;
+    padding: 20px 50px 20px 50px;
+    border: none;
+    box-shadow: 5px 2px 10px #111111;
+    text-align: center;
+    transition: .3s ease-in-out;
+    border-radius: 3px;
+    font-size: 15px;
+
+}
+#btnTotalAll:hover {
+    transform: translate(-1%) scale(0.98);
+    box-shadow: 1px 1px 3px #111111;
+    background-color: #245FB8;
+    color: white;
+
+
 }
 
+
+.plus{
+    color: white;
+    cursor: pointer;
+    font-size: 40px;
+
+}
 label{
     color: grey;
     line-height: 60px;
     font-size: 15px;
     font-family: "Open Sans", serif;
+    margin-left: 30px;
+
 }
 h1 {
     color: grey;
     font-size: 65px;
-    box-shadow: 2px 2px 5px #1d1d1d;
     width: 100%;
-    margin-left: 41%;
+    margin-left: 29%;
 
 
 }
@@ -44,11 +90,11 @@ p{
 h3{
     color: white;
     background-color: #6AB880;
-    font-size: 30px;
+    font-size: 25px;
     width: 350px;
     border-radius: 2px;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
 
 }
 input{
